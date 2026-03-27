@@ -40,7 +40,7 @@ const MenuCatalog = ({ menu, onMenuClick }) => {
                 <div className="item-header">
                   <h3 className="item-name">{item.name}</h3>
                   <div className="item-dots" />
-                  <span className="item-price">{item.price != null ? `$${item.price.toFixed(2)}` : 'N/A'}</span>
+                  <span className="item-price">{item.price != null ? `${item.price.toFixed(2)}` : 'N/A'}</span>
                 </div>
                 {item.description && <p className="item-desc">{item.description}</p>}
               </div>

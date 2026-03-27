@@ -7,7 +7,7 @@ import OpeningHours from './components/OpeningHours'
 import Footer from './components/Footer'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000/api'
 
 const flattenMenus = (menus, depth = 0) =>
   menus.reduce((acc, menu) => {
@@ -46,6 +46,9 @@ function App() {
     setError(null)
     try {
       const res = await fetch(`${API_BASE}/menus`)
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`)
+      }
       const data = await res.json()
       setMenus(data)
       if (!activeMenuId && data.length > 0) {
