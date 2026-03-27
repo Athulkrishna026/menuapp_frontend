@@ -1,0 +1,149 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  background: linear-gradient(120deg, #171f31, #1e293e);
+  border-bottom: 1px solid #c1cff4;
+  padding: 22px 0 20px;
+  color: #e5ecff;
+}
+
+.controls .container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row select,
+.form-row button {
+  min-height: 42px;
+  border: 1px solid #c8d0e3;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 2px rgba(15, 32, 80, 0.08);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row button:focus {
+  outline: none;
+  border-color: #7d90f1;
+  box-shadow: 0 0 0 3px rgba(125, 144, 241, 0.18);
+}
+
+.form-row button {
+  background: #3b5de7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.form-row button:hover {
+  background: #2f4dcc;
+}
+
+.error-message {
+  color: #c53030;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.submenu-list {
+  margin-top: 16px;
+}
+
+.submenu-list h3 {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #223258;
+}
+
+.submenu-list ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.submenu-list li {
+  margin: 0;
+}
+
+.submenu-btn {
+  background: #eef1ff;
+  border: 1px solid #d1d8f0;
+  padding: 8px 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #2a3e76;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.submenu-btn:hover {
+  background: #d7dfff;
+  transform: translateY(-1px);
+}
+
+.menu-items .menu-item-row {
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e5e9f5;
+  padding-bottom: 12px;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.item-name {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #e3eafc;
+  margin: 0;
+}
+
+.item-price {
+  font-weight: 700;
+  color: #a8c6ff;
+}
+
+.item-desc {
+  margin: 6px 0 0;
+  color: #c8d5f2;
+}
+
+.category-desc {
+  color: #4b5b82;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.menu-catalog .category-title {
+  font-size: 1.45rem;
+  color: #252e5e;
+  margin-bottom: 6px;
+}
+
+

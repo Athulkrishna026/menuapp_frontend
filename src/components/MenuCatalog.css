@@ -1,0 +1,235 @@
+.menu-catalog {
+  background-color: var(--bg-panel);
+  /* Optional: we could add the faint food icons background pattern here */
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-category {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .menu-category {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.category-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--text-white);
+  text-shadow: 2px 2px 0px var(--accent-red);
+  letter-spacing: 2px;
+  width: 300px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.category-title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .category-title {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+  }
+  .category-title::after {
+    display: none;
+  }
+}
+
+.menu-items {
+  flex-grow: 1;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.menu-item-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.item-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #555;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.item-desc {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+/* Salads Category Special Styling */
+.salads-category {
+  margin-top: 1rem;
+}
+
+.salads-box {
+  border: 1px dotted var(--accent-gold);
+  border-radius: 4px;
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  min-height: 200px;
+}
+
+@media (max-width: 768px) {
+  .salads-box {
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+}
+
+.salads-title-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 2rem;
+  top: -25px;
+}
+
+.salads-title {
+  background-color: var(--accent-red-bright);
+  color: var(--text-white);
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  padding: 0.2rem 1.5rem;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.salads-subtitle {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.salads-items {
+  flex-grow: 1;
+  margin-left: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .salads-title-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .salads-items {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 1rem;
+    z-index: 2;
+  }
+}
+
+.menu-item-row.no-desc {
+  gap: 0;
+}
+
+.salad-img {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #000;
+}
+
+@media (max-width: 768px) {
+  .salad-img {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 2rem auto 0;
+    display: block;
+  }
+}
+
+.skewers-img {
+  position: absolute;
+  top: -450px;
+  left: -150px;
+  width: 250px;
+  transform: rotate(-15deg);
+  opacity: 0.9;
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .skewers-img {
+    display: none;
+  }
+}

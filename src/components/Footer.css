@@ -1,0 +1,117 @@
+.footer-section {
+  background-color: var(--bg-dark);
+  padding-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.footer-box {
+  border: 1px solid rgba(196, 165, 88, 0.4);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 160px;
+}
+
+.footer-box-title {
+  font-family: var(--font-heading);
+  color: var(--accent-gold-bright);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact p, .footer-address p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.center-box {
+  justify-content: center;
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.logo-deep { color: var(--text-white); }
+.logo-net { color: var(--accent-gold); }
+.logo-soft { color: var(--text-white); font-weight: 300; }
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--text-gray);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-gold);
+}
+
+.footer-bottom {
+  background-color: #121415;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.bottom-links a {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.bottom-links a:hover {
+  color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  .bottom-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+  --bg-dark: #000000;
+  --bg-panel: #121618;
+  --text-white: #ffffff;
+  --text-gray: #8b8b8b;
+  --accent-gold: #857850;
+  --accent-gold-bright: #c4a558;
+  --accent-red: #800000;
+  --accent-red-bright: #e63946;
+  --accent-blue: #48cae4;
+  
+  --font-heading: 'Oswald', sans-serif;
+  --font-accent: 'Kelly Slab', cursive;
+  --font-body: 'Jost', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
